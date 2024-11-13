@@ -1,0 +1,23 @@
+Project_Structure:
+
+fastapi_mongodb_project/
+├── app/
+│   ├── __init__.py
+│   ├── main.py                     # Main application file
+│   ├── config.py                   # MongoDB configuration
+│   ├── models/                     # Database models
+│   │   ├── __init__.py
+│   │   └── lesson.py               # MongoDB Lesson model
+│   ├── schemas/                    # Pydantic schemas
+│   │   ├── __init__.py
+│   │   └── lesson_schema.py
+│   ├── services/                   # Business logic
+│   │   ├── __init__.py
+│   │   └── lesson_service.py
+│   ├── routers/                    # API routes
+│   │   ├── __init__.py
+│   │   └── lesson_router.py
+│   ├── db/                         # Database connection
+│   │   ├── __init__.py
+│   │   └── mongodb.py              # MongoDB client
+└── requirements.txt                # Project dependencies
